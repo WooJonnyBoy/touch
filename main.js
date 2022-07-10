@@ -7,7 +7,7 @@
     let letter = 'абвгґдеєжзиіїйклмнопрстуфхчцшщьюя'
     let lerarr = Array.from(letter.toUpperCase())
     num.textContent = lerarr[0]
-    document.addEventListener('touchstart', addletter)
+    document.addEventListener('click', addletter)
     function addletter(e) {
         if(e.target == arrow[0]) {
             i--
