@@ -9,6 +9,7 @@
     num.textContent = lerarr[0]
     document.addEventListener('click', addletter)
     function addletter(e) {
+         e.preventDefault()
         if(e.target == arrow[0]) {
             i--
             if(i < 0) {i = 32}
