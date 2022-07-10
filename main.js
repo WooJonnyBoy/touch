@@ -1,15 +1,15 @@
 let box = document.querySelector('.box')
 
 
-box.addEventListener('mousedown', move)
-box.addEventListener('mouseup', remove)
+box.addEventListener('touchstart', move)
+box.addEventListener('touchend', remove)
     
 function move() {
-    document.addEventListener('mousemove', cly)
+    document.addEventListener('touchmovee', cly)
 }
 
 function remove ()  {
-    document.removeEventListener('mousemove', cly)
+    document.removeEventListener('touchmove', cly)
 }
 
 function cly (e) {
