@@ -65,3 +65,8 @@
   border-left: 4px solid white;
   position: absolute;
 }
+@media (orientation: landscape) {
+    .box {
+        transform: translateY(0rem);
+    }
+  }
