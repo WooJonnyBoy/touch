@@ -1,5 +1,5 @@
-
-
+document.addEventListener('load', (e)=> {
+e.preventDefault()
 (function() {
     let i = 0
     let num = document.querySelector('.box')
@@ -9,7 +9,7 @@
     num.textContent = lerarr[0]
     document.addEventListener('click', addletter)
     function addletter(e) {
-         e.preventDefault()
+        e.preventDefault()
         if(e.target == arrow[0]) {
             i--
             if(i < 0) {i = 32}
@@ -31,7 +31,5 @@ function random(min, max) {
     let rand = Math.round(min - 0.5 + Math.random() * (max - min + 1))
     return rand
 }
-
-
-
+})
 
