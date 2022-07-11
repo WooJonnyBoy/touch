@@ -1,6 +1,6 @@
 window.addEventListener('load', (e)=> {
-e.preventDefault()
 (function() {
+    e.preventDefault()
     let i = 0
     let num = document.querySelector('.box')
     let arrow = document.querySelectorAll('.arrow')
