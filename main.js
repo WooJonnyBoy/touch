@@ -9,6 +9,7 @@ window.addEventListener('load', (e)=> {
     document.addEventListener('click', addletter)
     function addletter(e) {
         if(e.target == arrow[0]) {
+            e.preventDefault()
             i--
             if(i < 0) {i = 32}
             num.textContent = lerarr[i]
@@ -16,6 +17,7 @@ window.addEventListener('load', (e)=> {
             
         }
         if(e.target == arrow[1]) {
+            e.preventDefault()
             i++
             if(i > 32) {i = 0}
             num.textContent = lerarr[i]
