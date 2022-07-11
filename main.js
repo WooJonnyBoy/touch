@@ -1,6 +1,5 @@
 window.addEventListener('load', (e)=> {
 (function() {
-    e.preventDefault()
     let i = 0
     let num = document.querySelector('.box')
     let arrow = document.querySelectorAll('.arrow')
@@ -9,7 +8,6 @@ window.addEventListener('load', (e)=> {
     num.textContent = lerarr[0]
     document.addEventListener('click', addletter)
     function addletter(e) {
-        e.preventDefault()
         if(e.target == arrow[0]) {
             i--
             if(i < 0) {i = 32}
