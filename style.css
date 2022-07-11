@@ -18,6 +18,7 @@
 }
 
 .box {
+  padding: 10px;
   font-size: 23rem;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.741);
   transform: translateY(-5rem);
