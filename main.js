@@ -1,4 +1,4 @@
-document.addEventListener('load', (e)=> {
+window.addEventListener('load', (e)=> {
 e.preventDefault()
 (function() {
     let i = 0
