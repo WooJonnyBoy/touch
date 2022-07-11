@@ -7,6 +7,10 @@ window.addEventListener('load', (e)=> {
     let lerarr = Array.from(letter.toUpperCase())
     num.textContent = lerarr[0]
     document.addEventListener('click', addletter)
+    document.addEventListener('dblclick', double)
+    function double(e) {
+        e.preventDefault()
+    }
     function addletter(e) {
         if(e.target == arrow[0]) {
             i--
